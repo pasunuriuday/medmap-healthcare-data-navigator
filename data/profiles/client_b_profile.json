@@ -1,0 +1,246 @@
+{
+  "file_name": "client_b_claims.csv",
+  "file_path": "data/client_b/client_b_claims.csv",
+  "row_count": 1000,
+  "column_count": 12,
+  "duplicate_rows": 0,
+  "columns": [
+    {
+      "column_name": "CLAIM_NUMBER",
+      "pandas_dtype": "str",
+      "semantic_type": "IDENTIFIER",
+      "row_count": 1000,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "unique_count": 1000,
+      "unique_percentage": 100.0,
+      "sample_values": [
+        "CLM-0000001",
+        "CLM-0000002",
+        "CLM-0000003",
+        "CLM-0000004",
+        "CLM-0000005"
+      ],
+      "numeric_min": null,
+      "numeric_max": null,
+      "numeric_mean": null
+    },
+    {
+      "column_name": "PATIENT_NUMBER",
+      "pandas_dtype": "str",
+      "semantic_type": "IDENTIFIER",
+      "row_count": 1000,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "unique_count": 424,
+      "unique_percentage": 42.4,
+      "sample_values": [
+        "MEM-000378",
+        "MEM-000102",
+        "MEM-000175",
+        "MEM-000023",
+        "MEM-000296"
+      ],
+      "numeric_min": null,
+      "numeric_max": null,
+      "numeric_mean": null
+    },
+    {
+      "column_name": "DOCTOR_ID",
+      "pandas_dtype": "str",
+      "semantic_type": "IDENTIFIER",
+      "row_count": 1000,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "unique_count": 1000,
+      "unique_percentage": 100.0,
+      "sample_values": [
+        "NPI-207473",
+        "NPI-850800",
+        "NPI-391369",
+        "NPI-865179",
+        "NPI-301629"
+      ],
+      "numeric_min": null,
+      "numeric_max": null,
+      "numeric_mean": null
+    },
+    {
+      "column_name": "CPT_CODE",
+      "pandas_dtype": "int64",
+      "semantic_type": "PROCEDURE_CODE",
+      "row_count": 1000,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "unique_count": 10,
+      "unique_percentage": 1.0,
+      "sample_values": [
+        "97110",
+        "99215",
+        "36415",
+        "99214",
+        "93000"
+      ],
+      "numeric_min": 36415.0,
+      "numeric_max": 99215.0,
+      "numeric_mean": 85126.18
+    },
+    {
+      "column_name": "DIAGNOSIS",
+      "pandas_dtype": "str",
+      "semantic_type": "DIAGNOSIS_CODE",
+      "row_count": 1000,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "unique_count": 10,
+      "unique_percentage": 1.0,
+      "sample_values": [
+        "E11.9",
+        "F41.1",
+        "M54.50",
+        "J45.909",
+        "I10"
+      ],
+      "numeric_min": null,
+      "numeric_max": null,
+      "numeric_mean": null
+    },
+    {
+      "column_name": "SERVICE_DATE",
+      "pandas_dtype": "str",
+      "semantic_type": "DATE",
+      "row_count": 1000,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "unique_count": 346,
+      "unique_percentage": 34.6,
+      "sample_values": [
+        "12/03/2025",
+        "06/11/2026",
+        "04/12/2026",
+        "07/30/2026",
+        "10/28/2025"
+      ],
+      "numeric_min": null,
+      "numeric_max": null,
+      "numeric_mean": null
+    },
+    {
+      "column_name": "CHARGE_AMOUNT",
+      "pandas_dtype": "float64",
+      "semantic_type": "AMOUNT",
+      "row_count": 1000,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "unique_count": 1000,
+      "unique_percentage": 100.0,
+      "sample_values": [
+        "6412.3",
+        "346.48",
+        "8103.83",
+        "3830.28",
+        "5542.8"
+      ],
+      "numeric_min": 50.92,
+      "numeric_max": 9985.94,
+      "numeric_mean": 4976.98
+    },
+    {
+      "column_name": "APPROVED_AMOUNT",
+      "pandas_dtype": "float64",
+      "semantic_type": "AMOUNT",
+      "row_count": 1000,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "unique_count": 1000,
+      "unique_percentage": 100.0,
+      "sample_values": [
+        "3590.92",
+        "220.87",
+        "4478.17",
+        "2656.65",
+        "4887.43"
+      ],
+      "numeric_min": 29.29,
+      "numeric_max": 9201.9,
+      "numeric_mean": 3707.35
+    },
+    {
+      "column_name": "PAYMENT_AMOUNT",
+      "pandas_dtype": "float64",
+      "semantic_type": "AMOUNT",
+      "row_count": 1000,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "unique_count": 811,
+      "unique_percentage": 81.1,
+      "sample_values": [
+        "2809.93",
+        "188.09",
+        "4217.3",
+        "2133.79",
+        "0.0"
+      ],
+      "numeric_min": 0.0,
+      "numeric_max": 8684.62,
+      "numeric_mean": 2568.95
+    },
+    {
+      "column_name": "SERVICE_LOCATION",
+      "pandas_dtype": "str",
+      "semantic_type": "LOCATION",
+      "row_count": 1000,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "unique_count": 5,
+      "unique_percentage": 0.5,
+      "sample_values": [
+        "URGENT_CARE",
+        "OFFICE",
+        "HOSPITAL",
+        "OUTPATIENT",
+        "TELEHEALTH"
+      ],
+      "numeric_min": null,
+      "numeric_max": null,
+      "numeric_mean": null
+    },
+    {
+      "column_name": "STATUS",
+      "pandas_dtype": "str",
+      "semantic_type": "STATUS",
+      "row_count": 1000,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "unique_count": 3,
+      "unique_percentage": 0.3,
+      "sample_values": [
+        "PAID",
+        "DENIED",
+        "PENDING"
+      ],
+      "numeric_min": null,
+      "numeric_max": null,
+      "numeric_mean": null
+    },
+    {
+      "column_name": "INSURANCE_ID",
+      "pandas_dtype": "str",
+      "semantic_type": "IDENTIFIER",
+      "row_count": 1000,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "unique_count": 4,
+      "unique_percentage": 0.4,
+      "sample_values": [
+        "PAY001",
+        "PAY003",
+        "PAY002",
+        "PAY004"
+      ],
+      "numeric_min": null,
+      "numeric_max": null,
+      "numeric_mean": null
+    }
+  ]
+}

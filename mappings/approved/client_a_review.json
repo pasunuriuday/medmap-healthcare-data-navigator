@@ -1,0 +1,152 @@
+{
+  "client_name": "client_a",
+  "source_file": "client_a_claims.csv",
+  "target_model": "MEDMAP_COMMON_CLAIMS_MODEL",
+  "review_count": 12,
+  "reviews": [
+    {
+      "source_field": "CLM_ID",
+      "source_semantic_type": "IDENTIFIER",
+      "suggested_target": "claim_id",
+      "mapping_confidence": 100.0,
+      "source_decision": "AUTO_MAP",
+      "review_status": "APPROVED",
+      "final_target": "claim_id",
+      "reviewed_by": "SYSTEM",
+      "review_notes": "Automatically approved based on high mapping confidence.",
+      "reviewed_at": "2026-10-02T11:01:20.439779+00:00"
+    },
+    {
+      "source_field": "MEM_ID",
+      "source_semantic_type": "IDENTIFIER",
+      "suggested_target": "member_id",
+      "mapping_confidence": 100.0,
+      "source_decision": "AUTO_MAP",
+      "review_status": "APPROVED",
+      "final_target": "member_id",
+      "reviewed_by": "SYSTEM",
+      "review_notes": "Automatically approved based on high mapping confidence.",
+      "reviewed_at": "2026-10-02T11:01:20.439935+00:00"
+    },
+    {
+      "source_field": "PROV_NPI",
+      "source_semantic_type": "IDENTIFIER",
+      "suggested_target": "provider_id",
+      "mapping_confidence": 100.0,
+      "source_decision": "AUTO_MAP",
+      "review_status": "APPROVED",
+      "final_target": "provider_id",
+      "reviewed_by": "SYSTEM",
+      "review_notes": "Automatically approved based on high mapping confidence.",
+      "reviewed_at": "2026-10-02T11:01:20.439938+00:00"
+    },
+    {
+      "source_field": "PROC_CD",
+      "source_semantic_type": "PROCEDURE_CODE",
+      "suggested_target": "procedure_code",
+      "mapping_confidence": 85.0,
+      "source_decision": "REVIEW",
+      "review_status": "PENDING_REVIEW",
+      "final_target": null,
+      "reviewed_by": null,
+      "review_notes": null,
+      "reviewed_at": null
+    },
+    {
+      "source_field": "DX_CD",
+      "source_semantic_type": "DIAGNOSIS_CODE",
+      "suggested_target": "diagnosis_code",
+      "mapping_confidence": 85.0,
+      "source_decision": "REVIEW",
+      "review_status": "PENDING_REVIEW",
+      "final_target": null,
+      "reviewed_by": null,
+      "review_notes": null,
+      "reviewed_at": null
+    },
+    {
+      "source_field": "DOS",
+      "source_semantic_type": "DATE",
+      "suggested_target": "service_date",
+      "mapping_confidence": 85.0,
+      "source_decision": "REVIEW",
+      "review_status": "PENDING_REVIEW",
+      "final_target": null,
+      "reviewed_by": null,
+      "review_notes": null,
+      "reviewed_at": null
+    },
+    {
+      "source_field": "BILLED_AMT",
+      "source_semantic_type": "AMOUNT",
+      "suggested_target": "billed_amount",
+      "mapping_confidence": 85.0,
+      "source_decision": "REVIEW",
+      "review_status": "PENDING_REVIEW",
+      "final_target": null,
+      "reviewed_by": null,
+      "review_notes": null,
+      "reviewed_at": null
+    },
+    {
+      "source_field": "ALLOW_AMT",
+      "source_semantic_type": "AMOUNT",
+      "suggested_target": "allowed_amount",
+      "mapping_confidence": 85.0,
+      "source_decision": "REVIEW",
+      "review_status": "PENDING_REVIEW",
+      "final_target": null,
+      "reviewed_by": null,
+      "review_notes": null,
+      "reviewed_at": null
+    },
+    {
+      "source_field": "PAID_AMT",
+      "source_semantic_type": "AMOUNT",
+      "suggested_target": "paid_amount",
+      "mapping_confidence": 85.0,
+      "source_decision": "REVIEW",
+      "review_status": "PENDING_REVIEW",
+      "final_target": null,
+      "reviewed_by": null,
+      "review_notes": null,
+      "reviewed_at": null
+    },
+    {
+      "source_field": "POS",
+      "source_semantic_type": "LOCATION",
+      "suggested_target": "place_of_service",
+      "mapping_confidence": 85.0,
+      "source_decision": "REVIEW",
+      "review_status": "PENDING_REVIEW",
+      "final_target": null,
+      "reviewed_by": null,
+      "review_notes": null,
+      "reviewed_at": null
+    },
+    {
+      "source_field": "CLM_STATUS",
+      "source_semantic_type": "STATUS",
+      "suggested_target": "claim_status",
+      "mapping_confidence": 85.0,
+      "source_decision": "REVIEW",
+      "review_status": "PENDING_REVIEW",
+      "final_target": null,
+      "reviewed_by": null,
+      "review_notes": null,
+      "reviewed_at": null
+    },
+    {
+      "source_field": "PAYER_CD",
+      "source_semantic_type": "IDENTIFIER",
+      "suggested_target": "payer_id",
+      "mapping_confidence": 100.0,
+      "source_decision": "AUTO_MAP",
+      "review_status": "APPROVED",
+      "final_target": "payer_id",
+      "reviewed_by": "SYSTEM",
+      "review_notes": "Automatically approved based on high mapping confidence.",
+      "reviewed_at": "2026-10-02T11:01:20.439943+00:00"
+    }
+  ]
+}

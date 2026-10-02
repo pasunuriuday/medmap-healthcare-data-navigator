@@ -1,0 +1,320 @@
+{
+  "client_name": "client_b",
+  "source_file": "client_b_claims.csv",
+  "target_model": "MEDMAP_COMMON_CLAIMS_MODEL",
+  "mapping_count": 12,
+  "mappings": [
+    {
+      "source_field": "CLAIM_NUMBER",
+      "source_semantic_type": "IDENTIFIER",
+      "target_field": "claim_id",
+      "confidence": 100.0,
+      "decision": "AUTO_MAP",
+      "score_details": {
+        "name_score": 100.0,
+        "semantic_score": 100.0,
+        "value_score": 100.0
+      },
+      "alternative_targets": [
+        {
+          "target_field": "member_id",
+          "confidence": 66.54
+        },
+        {
+          "target_field": "provider_id",
+          "confidence": 60.56
+        },
+        {
+          "target_field": "payer_id",
+          "confidence": 43.95
+        }
+      ]
+    },
+    {
+      "source_field": "PATIENT_NUMBER",
+      "source_semantic_type": "IDENTIFIER",
+      "target_field": "member_id",
+      "confidence": 100.0,
+      "decision": "AUTO_MAP",
+      "score_details": {
+        "name_score": 100.0,
+        "semantic_score": 100.0,
+        "value_score": 100.0
+      },
+      "alternative_targets": [
+        {
+          "target_field": "claim_id",
+          "confidence": 66.54
+        },
+        {
+          "target_field": "provider_id",
+          "confidence": 66.38
+        },
+        {
+          "target_field": "payer_id",
+          "confidence": 46.82
+        }
+      ]
+    },
+    {
+      "source_field": "DOCTOR_ID",
+      "source_semantic_type": "IDENTIFIER",
+      "target_field": "provider_id",
+      "confidence": 100.0,
+      "decision": "AUTO_MAP",
+      "score_details": {
+        "name_score": 100.0,
+        "semantic_score": 100.0,
+        "value_score": 100.0
+      },
+      "alternative_targets": [
+        {
+          "target_field": "claim_id",
+          "confidence": 57.0
+        },
+        {
+          "target_field": "payer_id",
+          "confidence": 53.24
+        },
+        {
+          "target_field": "member_id",
+          "confidence": 52.27
+        }
+      ]
+    },
+    {
+      "source_field": "CPT_CODE",
+      "source_semantic_type": "PROCEDURE_CODE",
+      "target_field": "procedure_code",
+      "confidence": 85.0,
+      "decision": "REVIEW",
+      "score_details": {
+        "name_score": 100.0,
+        "semantic_score": 100.0,
+        "value_score": 0.0
+      },
+      "alternative_targets": [
+        {
+          "target_field": "provider_id",
+          "confidence": 30.0
+        },
+        {
+          "target_field": "payer_id",
+          "confidence": 30.0
+        },
+        {
+          "target_field": "diagnosis_code",
+          "confidence": 27.69
+        }
+      ]
+    },
+    {
+      "source_field": "DIAGNOSIS",
+      "source_semantic_type": "DIAGNOSIS_CODE",
+      "target_field": "diagnosis_code",
+      "confidence": 85.0,
+      "decision": "REVIEW",
+      "score_details": {
+        "name_score": 100.0,
+        "semantic_score": 100.0,
+        "value_score": 0.0
+      },
+      "alternative_targets": [
+        {
+          "target_field": "service_date",
+          "confidence": 30.0
+        },
+        {
+          "target_field": "place_of_service",
+          "confidence": 20.0
+        },
+        {
+          "target_field": "claim_status",
+          "confidence": 18.46
+        }
+      ]
+    },
+    {
+      "source_field": "SERVICE_DATE",
+      "source_semantic_type": "DATE",
+      "target_field": "service_date",
+      "confidence": 85.0,
+      "decision": "REVIEW",
+      "score_details": {
+        "name_score": 100.0,
+        "semantic_score": 100.0,
+        "value_score": 0.0
+      },
+      "alternative_targets": [
+        {
+          "target_field": "place_of_service",
+          "confidence": 42.86
+        },
+        {
+          "target_field": "payer_id",
+          "confidence": 30.0
+        },
+        {
+          "target_field": "procedure_code",
+          "confidence": 28.57
+        }
+      ]
+    },
+    {
+      "source_field": "CHARGE_AMOUNT",
+      "source_semantic_type": "AMOUNT",
+      "target_field": "billed_amount",
+      "confidence": 85.0,
+      "decision": "REVIEW",
+      "score_details": {
+        "name_score": 100.0,
+        "semantic_score": 100.0,
+        "value_score": 0.0
+      },
+      "alternative_targets": [
+        {
+          "target_field": "allowed_amount",
+          "confidence": 67.86
+        },
+        {
+          "target_field": "paid_amount",
+          "confidence": 65.0
+        },
+        {
+          "target_field": "payer_id",
+          "confidence": 25.0
+        }
+      ]
+    },
+    {
+      "source_field": "APPROVED_AMOUNT",
+      "source_semantic_type": "AMOUNT",
+      "target_field": "allowed_amount",
+      "confidence": 85.0,
+      "decision": "REVIEW",
+      "score_details": {
+        "name_score": 100.0,
+        "semantic_score": 100.0,
+        "value_score": 0.0
+      },
+      "alternative_targets": [
+        {
+          "target_field": "billed_amount",
+          "confidence": 67.86
+        },
+        {
+          "target_field": "paid_amount",
+          "confidence": 66.54
+        },
+        {
+          "target_field": "provider_id",
+          "confidence": 31.3
+        }
+      ]
+    },
+    {
+      "source_field": "PAYMENT_AMOUNT",
+      "source_semantic_type": "AMOUNT",
+      "target_field": "paid_amount",
+      "confidence": 85.0,
+      "decision": "REVIEW",
+      "score_details": {
+        "name_score": 100.0,
+        "semantic_score": 100.0,
+        "value_score": 0.0
+      },
+      "alternative_targets": [
+        {
+          "target_field": "billed_amount",
+          "confidence": 66.54
+        },
+        {
+          "target_field": "allowed_amount",
+          "confidence": 63.57
+        },
+        {
+          "target_field": "member_id",
+          "confidence": 30.0
+        }
+      ]
+    },
+    {
+      "source_field": "SERVICE_LOCATION",
+      "source_semantic_type": "LOCATION",
+      "target_field": "place_of_service",
+      "confidence": 85.0,
+      "decision": "REVIEW",
+      "score_details": {
+        "name_score": 100.0,
+        "semantic_score": 100.0,
+        "value_score": 0.0
+      },
+      "alternative_targets": [
+        {
+          "target_field": "service_date",
+          "confidence": 42.86
+        },
+        {
+          "target_field": "payer_id",
+          "confidence": 25.71
+        },
+        {
+          "target_field": "allowed_amount",
+          "confidence": 23.23
+        }
+      ]
+    },
+    {
+      "source_field": "STATUS",
+      "source_semantic_type": "STATUS",
+      "target_field": "claim_status",
+      "confidence": 85.0,
+      "decision": "REVIEW",
+      "score_details": {
+        "name_score": 100.0,
+        "semantic_score": 100.0,
+        "value_score": 0.0
+      },
+      "alternative_targets": [
+        {
+          "target_field": "member_id",
+          "confidence": 22.5
+        },
+        {
+          "target_field": "service_date",
+          "confidence": 20.0
+        },
+        {
+          "target_field": "paid_amount",
+          "confidence": 18.0
+        }
+      ]
+    },
+    {
+      "source_field": "INSURANCE_ID",
+      "source_semantic_type": "IDENTIFIER",
+      "target_field": "payer_id",
+      "confidence": 100.0,
+      "decision": "AUTO_MAP",
+      "score_details": {
+        "name_score": 100.0,
+        "semantic_score": 100.0,
+        "value_score": 100.0
+      },
+      "alternative_targets": [
+        {
+          "target_field": "member_id",
+          "confidence": 58.6
+        },
+        {
+          "target_field": "claim_id",
+          "confidence": 51.67
+        },
+        {
+          "target_field": "provider_id",
+          "confidence": 51.09
+        }
+      ]
+    }
+  ]
+}
